@@ -1,0 +1,53 @@
+@import '../../styles/var';
+
+.projectListItem{
+    position: relative;
+    z-index: 4;
+    background-color: $bg2;
+    width: 100%;
+
+    border-radius: $br;
+    overflow: hidden;
+
+    transition: $ts;
+
+    .icon{
+        width: 100%;
+    }
+
+    &:hover{
+        transform: translate(0, -3px);
+        background-color: $purple0;
+        color: $c1;
+        box-shadow: 0 3px 20px 0 rgba($purple0, 0.4);
+    }
+
+    .infos{
+        background-color: rgba($c1, 0.04);
+    }
+
+    .bgImg{
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        filter: blur(3px);
+    }
+
+    &.bgImgLayer{
+        .main{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .infos{
+            background-color: rgba($bg1, 0.5);
+        }
+
+        &:hover{
+            background-color: $bg2;
+            box-shadow: 0 3px 20px 0 rgba($purple0, 0.4);
+        }
+    }
+}

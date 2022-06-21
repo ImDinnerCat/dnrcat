@@ -1,0 +1,70 @@
+@import '../../styles/var';
+
+.usercard{
+    position: relative;
+    background-color: $bg2;;
+    border-radius: $br;
+    overflow: hidden;
+
+    .banner{
+        position: relative;
+        overflow: hidden;
+        height: 18rem;
+        width: 100%;
+
+        .bgImage{
+            position: absolute;
+            width: 100%;
+            top: -
+            2.4rem;
+        }
+    }
+
+    .avatar{
+        position: absolute;
+        background-color: red;
+        width: 9rem;
+        height: 9rem;
+        border-radius: 9rem;
+
+        border: 5px solid $bg2;
+
+        transform: translate(2rem, -50%);
+        overflow: hidden;
+
+        .avatarImg{
+            height: 100%;
+            transform: translate(-2rem);
+        }
+    }
+
+    .info{
+        .username{
+            margin: 0;
+            transform: translate(13rem);
+        }
+
+        .usertitle{
+            margin: 0 0 -0.4rem 0;
+            transform: translate(13rem, -0.5rem);
+            opacity: 0.2;
+        }
+    }
+
+    .title{
+        margin: 0 0 1rem 0;
+        width: fit-content;
+        border-bottom: 2px solid rgba($c1, 0.1);
+        color: rgba($c1, 0.2)
+    }
+
+    .aboutMeTxt{
+        display: block;
+        font-size: 1.1rem;
+
+        i{
+            width: 1.8rem;
+            text-align: center;
+        }
+    }
+}
