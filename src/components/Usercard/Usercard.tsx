@@ -46,7 +46,7 @@ export const Usercard: React.FC<Props> = ({ items }) => {
 
                     {items.aboutMe.map((item: any, index: any) => {
                         return(
-                            <span className={"mb-1 " + s.aboutMeTxt}>
+                            <span key={index} className={"mb-1 " + s.aboutMeTxt}>
                                 <i className={item.icon}></i> {item.text}
                             </span>
                         )
@@ -58,7 +58,7 @@ export const Usercard: React.FC<Props> = ({ items }) => {
                     <div className="row row-cols-2 g-3">
                         {items.socialMedia.map((item: any, index: any) => {
                             return(
-                                <div className="col">
+                                <div key={index} className="col">
                                     <SocialMediaBtn type={item.type} link={item.link} />
                                 </div>
                             )

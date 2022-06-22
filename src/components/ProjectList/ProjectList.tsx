@@ -13,7 +13,7 @@ export const ProjectList: React.FC<Props> = ({ items }) => {
         <div className="row row-cols-1 g-4">
             {items.map((item: any, index: any) => {
                  return(
-                    <div className="col">
+                    <div key={index} className="col">
                         <ProjectListItem 
                             title={item.title}
                             text={item.text}

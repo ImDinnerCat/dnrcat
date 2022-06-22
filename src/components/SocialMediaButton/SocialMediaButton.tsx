@@ -11,7 +11,7 @@ export type Props = {
 export const SocialMediaBtn: React.FC<Props> = ({ type, link }) => {
 
     return(
-        <a href={link} target="_blank" className={s.socialMediaBtn}>
+        <a href={link} target="_blank" rel="noopener noreferrer" className={s.socialMediaBtn}>
             {(() => {
                 switch ( type ) {
                     case "github":

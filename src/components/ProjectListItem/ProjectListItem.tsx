@@ -22,13 +22,13 @@ export const ProjectListItem: React.FC<Props> = ({ title, text, logo, link, back
     }
 
     return(
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noopener noreferrer">
             <div className={useBgImg ? s.bgImgLayer + " " + s.projectListItem : s.projectListItem}>
 
                 { (() => {
                     if (background) {
                         return (
-                            <img className={s.bgImg} src={background}></img>
+                            <img className={s.bgImg} alt="background image" src={background}></img>
                         )
                     }
                 })() }
@@ -36,7 +36,7 @@ export const ProjectListItem: React.FC<Props> = ({ title, text, logo, link, back
                 <div className={"row m-0 " + s.main}>
 
                     <div className="col-6 px-5 py-5 d-flex justify-content-center align-items-center">
-                        <img src={logo} className={s.icon} />
+                        <img src={logo} alt="Project logo" className={s.icon} />
                     </div>
 
                     <div className={"col-6 px-3 py-3 d-flex flex-column " + s.infos}>
@@ -47,7 +47,7 @@ export const ProjectListItem: React.FC<Props> = ({ title, text, logo, link, back
                         <div className="row row-cols-auto g-2 mt-auto">
                             {labels.map((item: any, index: any) => {
                                 return(
-                                    <div className="col">
+                                    <div key={index} className="col">
                                         { (() => {
                                             if (checkHex.test(item.background) === true) {
                                                 const rand = (min: number, max: number) => {
