@@ -10,7 +10,7 @@ export type Props = {
 export const ProjectList: React.FC<Props> = ({ items }) => {
 
     return(
-        <div className="row row-cols-1 g-3">
+        <div className="row row-cols-1 g-4">
             {items.map((item: any, index: any) => {
                  return(
                     <div className="col">

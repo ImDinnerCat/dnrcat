@@ -1,56 +1,40 @@
 [
     {
-        "title": "retro-list.io",
-        "text": "Eine Liste mit Habbo Retro Hotels und Fanseiten, außerdem ist ein Assets-Store und eine Jobbörse enthalten.",
-        "logo": "/logo.png",
-        "link": "https://retro-list.io/",
-        "background": "/nav-hotels.png",
+        "title": "Project A",
+        "text": "Short description or explanation",
+        "link": "https://project.com/",
+        "logo": "/assets/project-a/logo.png",
         "labels": [
             {
-                "text": "Projektleitung",
-                "icon": "fa-solid fa-crown",
-                "background": "#34495e"
-            },
-
-            {
-                "text": "Developer",
-                "icon": "fa-solid fa-code",
-                "background": "#34495e"
-            },
-
-            {
-                "text": "Designer",
-                "icon": "fa-solid fa-compass-drafting",
-                "background": "#34495e"
-            },
-
-            {
-                "text": "1.0.0 Alpha",
-                "icon": "fa-solid fa-code-branch",
-                "background": "#9b59b6"
-            },
-
-            {
-                "text": "Offline (Coming soon)",
-                "icon": "fa-solid fa-globe",
-                "background": "danger"
-            }
-        ]
-    },
-
-    {
-        "title": "HabboSO",
-        "logo": "/habbo-logo.png",
-        "link": "https://habbo.so/",
-        "labels": [
-            {
-                "text": "5",
-                "icon": "fa-solid fa-heart",
-                "background": "text-bg-success"
+              "text": "I'm a label",
+              "icon": "fa-solid fa-crown",
+              "background": "#34495e"
             },
             
             {
-                "text": "Hallo 2"
+              "text": "Hello world!",
+              "icon": "fa-solid fa-globe",
+              "background": "danger"
+            }
+        ]
+    },
+      
+    {
+        "title": "Project B",
+        "text": "Short description or explanation",
+        "link": "https://project.com/",
+        "logo": "/assets/project-b/logo.png",
+        "labels": [
+            {
+              "text": "I'm a label",
+              "icon": "fa-solid fa-crown",
+              "background": "#34495e"
+            },
+            
+            {
+              "text": "Hello world!",
+              "icon": "fa-solid fa-globe",
+              "background": "danger"
             }
         ]
     }

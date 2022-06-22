@@ -1,0 +1,50 @@
+{
+    "username": "Username",
+    "usertitle": "Title",
+
+    "img": {
+        "banner": {
+            "src": "/assets/banner.jpg",
+            "height": "auto",
+            "width": "100%",
+            "transform": {
+                "x": "0",
+                "y": "-3rem"
+            }
+        },
+
+        "avatar": {
+            "src": "/assets/avatar.jpg",
+            "height": "100%",
+            "width": "auto",
+            "transform": {
+                "x": "0",
+                "y": "0"
+            }
+        }
+    },
+
+    "aboutMe": [
+        {
+            "text": "Hello world",
+            "icon": "fa-solid fa-globe"
+        },
+      
+        {
+            "text": "I'm a text",
+            "icon": "fa-solid fa-satellite"
+        }
+    ],
+
+    "socialMedia": [
+        {
+            "type": "github",
+            "link": "https://github.com/username"
+        },
+      
+        {
+            "type": "discord",
+            "link": "https://discordapp.com/users/ID"
+        }
+    ]
+}
