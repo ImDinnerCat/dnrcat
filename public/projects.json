@@ -24,6 +24,7 @@
         "text": "Short description or explanation",
         "link": "https://project.com/",
         "logo": "/assets/project-b/logo.png",
+        "color": "#37b6f1",
         "labels": [
             {
               "text": "I'm a label",

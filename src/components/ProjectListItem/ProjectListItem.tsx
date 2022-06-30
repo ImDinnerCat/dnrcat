@@ -7,12 +7,13 @@ export type Props = {
     text: string;
     logo: string;
     link: string;
+    color?: string;
     background: string;
     labels: any;
     key: number;
 }
 
-export const ProjectListItem: React.FC<Props> = ({ title, text, logo, link, background, labels, key }) => {
+export const ProjectListItem: React.FC<Props> = ({ title, text, logo, link, color = "#9b59b6", background, labels, key }) => {
 
     const checkHex=/^#([0-9a-f]{3}){1,2}$/i;
 
@@ -21,9 +22,20 @@ export const ProjectListItem: React.FC<Props> = ({ title, text, logo, link, back
         useBgImg = true;
     }
 
+    const rand = (min: number, max: number) => {
+        return Math.floor(Math.random() * (max - min + 1) + min)
+    }
+
+    const colorClass = `color_` + rand(10000, 99999)
+
     return(
         <a href={link} target="_blank" rel="noopener noreferrer">
-            <div className={useBgImg ? s.bgImgLayer + " " + s.projectListItem : s.projectListItem}>
+            <style>{`
+                .${colorClass} {
+                    color: ${color};
+                }
+            `}</style>
+            <div className={useBgImg ? s.bgImgLayer + " " + s.projectListItem + " " + colorClass : s.projectListItem + " " + colorClass}>
 
                 { (() => {
                     if (background) {
@@ -50,10 +62,6 @@ export const ProjectListItem: React.FC<Props> = ({ title, text, logo, link, back
                                     <div key={index} className="col">
                                         { (() => {
                                             if (checkHex.test(item.background) === true) {
-                                                const rand = (min: number, max: number) => {
-                                                    return Math.floor(Math.random() * (max - min + 1) + min)
-                                                }
-                                                  
                                                 const styleClass = "badge_" + rand(10000, 99999)
 
                                                 return (

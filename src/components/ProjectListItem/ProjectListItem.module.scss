@@ -4,6 +4,7 @@
     position: relative;
     z-index: 4;
     background-color: $bg2;
+    color: $purple0;
     width: 100%;
 
     border-radius: $br;
@@ -17,13 +18,13 @@
 
     &:hover{
         transform: translate(0, -5px);
-        background-color: $purple0;
-        color: $c1;
-        box-shadow: 0 5px 20px 0 rgba($purple0, 0.6);
+        background-color: currentColor;
+        box-shadow: 0 5px 20px -4px currentColor;
     }
 
     .infos{
         background-color: rgba($c1, 0.04);
+        color: $c1;
     }
 
     .bgImg{
